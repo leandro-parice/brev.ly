@@ -99,7 +99,7 @@ npm run test
 
 ### Web
 
-To run the front-end of the application, follow these steps:
+Para executar a aplicação do front-end, siga esses passos:
 
 
 1. Navegue até a pasta web:
@@ -114,7 +114,7 @@ cd web
 cp .env.local.example .env.local
 ```
 
-23 Instale as dependências usando o npm:
+3 Instale as dependências usando o npm:
 
 ```bash
 npm install
