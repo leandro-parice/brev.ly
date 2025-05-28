@@ -64,7 +64,7 @@ npm install
 3. Construa e inicie os containers:
 
 ```bash
-docker-compose up --build -d
+docker compose up --build -d
 ```
 
 4. Em seguida, execute a migration dentro do container da aplicação:
@@ -84,7 +84,7 @@ Para executar os testes, siga estes passos:
 2. Execute o comando para iniciar os testes:
 
 ```bash
-pnpm run test
+npm run test
 ```
 
 <br/>
