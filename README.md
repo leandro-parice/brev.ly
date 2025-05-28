@@ -43,6 +43,12 @@ Para executar a aplicação, certifique-se de ter o [Docker](https://www.docker.
 
 ### Server
 
+Crie o arquivo .env copiando arquivo .env.example
+
+cp .env.example .env
+
+Preenche o arquivo com suas informações personalizadas
+
 1. Navegue até a pasta do **server**:
 
 ```bash
