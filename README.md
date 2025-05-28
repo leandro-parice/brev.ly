@@ -43,31 +43,33 @@ Para executar a aplicação, certifique-se de ter o [Docker](https://www.docker.
 
 ### Server
 
-Crie o arquivo .env copiando arquivo .env.example
-
-cp .env.example .env
-
-Preenche o arquivo com suas informações personalizadas
-
 1. Navegue até a pasta do **server**:
 
 ```bash
 cd server
 ```
 
-2. Instale as dependências usando o npm:
+2.	Crie o arquivo .env copiando o arquivo de exemplo:
+
+```bash
+cp .env.example .env
+```
+
+3.	Preencha o .env com suas informações personalizadas, se necessário.
+
+4. Instale as dependências usando o npm:
 
 ```bash
 npm install
 ```
 
-3. Construa e inicie os containers:
+5. Construa e inicie os containers:
 
 ```bash
 docker compose up --build -d
 ```
 
-4. Em seguida, execute a migration dentro do container da aplicação:
+6. Em seguida, execute a migration dentro do container da aplicação:
 
 ```bash
 docker compose exec app npm run db:migrate
@@ -79,9 +81,15 @@ Seu servidor deve estar rodando na porta definida (o padrão é 3333).
 
 Para executar os testes, siga estes passos:
 
-1. Certifique-se de que o arquivo .env.test esteja configurado com as variáveis de ambiente corretas para testes.
+1.	Crie o arquivo .env copiando o arquivo de exemplo:
 
-2. Execute o comando para iniciar os testes:
+```bash
+cp .env.test.example .env.test
+```
+
+2.	Preencha o .env.test com suas informações personalizadas, se necessário.
+
+3. Execute o comando para iniciar os testes:
 
 ```bash
 npm run test
@@ -93,19 +101,27 @@ npm run test
 
 To run the front-end of the application, follow these steps:
 
+
 1. Navegue até a pasta web:
 
 ```bash
 cd web
 ```
 
-2. Instale as dependências usando o npm:
+2.	Crie o arquivo .env.local copiando o arquivo de exemplo:
+
+```bash
+cp .env.local.example .env.local
+```
+
+23 Instale as dependências usando o npm:
 
 ```bash
 npm install
 ```
 
-3. Tm seguida, inicie o servidor de desenvolvimento:
+
+4. Tm seguida, inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
